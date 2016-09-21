@@ -1,0 +1,67 @@
+<script>
+development();
+function development() {
+    var new_height = $(window).height();
+    var new_weight = $(window).width();
+    alert(new_height)
+    alert(new_weight)
+    $("body").css({'width': new_weight + 'px', 'height': new_weight})
+
+}
+
+init_show();
+function init_show() {
+    var new_height = $(window).height();
+    var new_weight = $(window).width();
+    if(new_weight>new_height){
+        horizontal_show()
+    }else{
+        vertical_show()
+    }
+}
+
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {
+    if (window.orientation === 180 || window.orientation === 0) {
+        //竖屏
+        var ua = navigator.userAgent.toLowerCase();
+        if (/iphone|ipad|ipod/.test(ua)) {
+            rotate_show(0);
+        } else if (/android/.test(ua)) {
+            alert("android");
+            window.location.reload()
+        }
+    }
+    if (window.orientation === 90 || window.orientation === -90) {
+        //横屏
+        var ua = navigator.userAgent.toLowerCase();
+        if (/iphone|ipad|ipod/.test(ua)) {
+            rotate_show(1);
+        } else if (/android/.test(ua)) {
+            window.location.reload()
+        }
+    }
+}, false);
+
+function rotate_show(flag){
+    if (flag == 0){
+        //竖屏
+    development();
+
+    }else {
+        //横屏
+    development();
+
+    }
+}
+
+// 竖屏样式加载
+function vertical_show() {
+    $(".main_1").css({'width': '100%'})
+}
+
+// 横屏样式加载
+function horizontal_show() {
+
+}
+
+</script>
