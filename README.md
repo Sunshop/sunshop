@@ -5,6 +5,7 @@
 ##好用的插件
 
 * 轮播图插件 `Myfocus`
+* [css开发指南](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS) `css渐变，媒体查询，计数器等`
 
 ##有问题反馈
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
