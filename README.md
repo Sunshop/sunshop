@@ -22,7 +22,7 @@
 * [mou](http://mouapp.com/) 
 * [ace](http://ace.ajax.org/)
 * [jquery](http://jquery.com)
-* [Ioncie](http://ionicframework.com/docs/v2/api/)
+* [Ionic](http://ionicframework.com/docs/v2/api/)
 
 ##关于作者
 
