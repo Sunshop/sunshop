@@ -1,0 +1,23 @@
+<div class="block1  clearfix" style="width: 1200px;text-align: center;">
+  {% if request.session.ShopSetting.footerPhoto %}
+    {% if request.session.ShopSetting.footerPhoto.is_local %}
+      <img src="{{ request.session.ShopSetting.footerPhoto.img }}" style="max-width: 1200px">
+    {% else %}
+      <img src="{{ MEDIA_URL }}{{ request.session.ShopSetting.footerPhoto.img }}" style="max-width: 1200px">
+    {% endif %}
+  {% endif %}
+</div>
+        {% ifnotequal request.session.ShopSetting.site_id  65 %}
+        {% ifnotequal request.session.ShopSetting.site_id  70 %}
+<div class="block1 tc" style="margin-bottom:20px;background: #f1f1f1;border: 1px solid  #f1f1f2;width: 1200px">
+  {% if request.session.ShopSetting.show_trademark %}
+    <div style="padding: 5px 0">
+    技术支持:&nbsp;<a href="http://www.9digit.cn" target="_blank" style="color: #0088cc;">上海熠科网络技术有限公司</a>&nbsp;&nbsp;<span>苏ICP备15058985号</span>
+    </div>
+  {% endif %}
+  {% if request.session.ShopSetting.baidu_ga %}
+    {{ request.session.ShopSetting.baidu_ga|safe }}
+  {% endif %}
+</div>
+        {% endifnotequal %}
+        {% endifnotequal %}

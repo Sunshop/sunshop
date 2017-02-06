@@ -1,0 +1,103 @@
+
+<view class="about">
+    <template name="itmes" >
+        <view>
+            <image style="width:50rpx;height:50rpx;" src="{{img}}" model='scrollToFill'></image>
+        </view>
+        <view >
+            <view>{{title}}</view>
+            <view >{{time}}</view>
+        </view>
+    </template> 
+    <block wx:for="{{newsList}}" >
+        <template is="itmes" data="{{...item}}" />
+    </block>
+</view>
+
+//node项目启动！
+pm2 start ./bin/www
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>
+
+//计算阶乘
+
+function factorial(n) {
+    if (n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+//目录遍历
+function travel(dir, callback) {
+    fs.readdirSync(dir).forEach(function (file) {
+        var pathname = path.join(dir, file);
+
+        if (fs.statSync(pathname).isDirectory()) {
+            travel(pathname, callback);
+        } else {
+            callback(pathname);
+        }
+    });
+}
+
+
+n: 当年MP3歌单，外滩十八号，依然在一起，该死的温柔，怀念过去，分手礼，god is a god ，即使知道要见面，老人与海，你的承诺，两个人，nobody。
+
+
+
+
+
+-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+
+
+
+self.data.timuList[self.data.num]
+
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+    
+
+
+梦游病例
+
+http://www.santaihu.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<script>
+    var top_jt_c_nav = $(".jt_c_nav").offset().top;
+    var jt_content_height = $(".jt_content").height();
+    window.onscroll = function () {
+        var jt_c_nav_height = parseInt($(".jt_c_nav").height());
+        if ($(document).scrollTop() >= top_jt_c_nav) {
+            var new_top = parseInt($(document).scrollTop() - top_jt_c_nav);
+            if(new_top+jt_c_nav_height >= jt_content_height){
+                return false
+            }else {
+                $(".jt_c_nav").css("top", new_top + "px");
+            }
+        } else {
+            $(".jt_c_nav").css("top", 0);
+        }
+    }
+</script>
