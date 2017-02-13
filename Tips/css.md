@@ -7,7 +7,7 @@
 * 为父div添加`padding`，或者至少添加`padding-top`
 
 ##垂直居中任何元素
-```css
+```html
 html, body {
   height: 100%;
   margin: 0;
