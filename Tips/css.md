@@ -63,7 +63,7 @@ a[href^="http"]:empty::before {
 ```
 实用性一般！
 
-##页面滚动到指定位置
+##页面滚动效果
 
 ```js
 $('html, body').animate({
