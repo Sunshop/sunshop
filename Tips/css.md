@@ -63,4 +63,48 @@ a[href^="http"]:empty::before {
 ```
 实用性一般！
 
+##页面滚动到指定位置
+
+```js
+$('html, body').animate({
+            scrollTop: $(".main_3").offset().top
+        }, 1000);
+```
+
+##输入为空，字体颜色变化
+
+```html
+<input id="id_card" type="text" value="请输入您的登录账号" onfocus="if(this.value=='请输入您的登录账号'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请输入您的登录账号'){this.value='请输入您的登录账号';this.style.color='#D9D9D9';}">
+```
+
+##检测电话号码，名字是否合法
+
+```js
+	var phone = $('#telphone').val();
+    var vip_name = $('#vip_name').val();
+    var re_tel = /^0?1[3|4|5|7|8][0-9]\d{8}$/;
+    var re_name = /^[\u4E00-\u9FA5]{2,4}$/;
+    var tflag = re_tel.test(phone.toString());
+    var nflag = re_name.test(vip_name.toString());
+    if (!vip_name){
+        alert("请填写姓名！");
+        return false;
+    }
+    if (!phone){
+        alert("请填写手机号码！");
+        return false;
+    }
+    if(!(tflag)){
+        alert("手机号码有误，请重新填写！");
+        return false;
+    }
+    if (!(nflag)){
+        alert("姓名填写有误，请重新填写！");
+        return false;
+    }
+```
+
+
+
+
 
