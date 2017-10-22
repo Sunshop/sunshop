@@ -22,3 +22,10 @@ $.ajax({
 });
 
 window.sessionStorage.setItem("P_l_h5", true);
+
+
+
+# JsonResponse需要传递dict()
+# json.loads  字符串-> dict()   json.dumps dict()-> 序列化
+
+JsonResponse(json_lsit, safe=false)
