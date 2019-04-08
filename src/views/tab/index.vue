@@ -32,6 +32,7 @@ export default {
   },
   methods: {
     showCreatedTimes() {
+      console.log(123);
       this.createdTimes = this.createdTimes + 1
     }
   }
